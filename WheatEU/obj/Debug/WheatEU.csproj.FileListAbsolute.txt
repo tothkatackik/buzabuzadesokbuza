@@ -8,3 +8,4 @@ H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.csproj.Gene
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.csproj.CoreCompileInputs.cache
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.exe
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.pdb
+H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.exe.config

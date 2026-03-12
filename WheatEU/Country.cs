@@ -16,5 +16,8 @@ namespace WheatEU
             this.name = name;
             this.wheatAmount = wheatAmount;
         }
+
+        public string Name { get => name; }
+        public Dictionary<int, string> WheatAmount { get => new Dictionary<int, string>(wheatAmount); }
     }
 }
