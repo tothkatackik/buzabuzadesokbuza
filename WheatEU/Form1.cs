@@ -31,14 +31,13 @@ namespace WheatEU
             {
                 countries = new List<Country>();
                 string[] firstLine = sr.ReadLine().Split(';');
-                firstLine.Skip(1);
                 while (!sr.EndOfStream)
                 {
                     string[] line = sr.ReadLine().Split(';');
                     Dictionary<int, string> temp = new Dictionary<int, string>();
-                    for (int i = 0; i < firstLine.Length; i++)
+                    for (int i = 1; i < firstLine.Length; i++)
                     {
-                        temp.Add(Convert.ToInt32(firstLine[i]), line[i + 1]);
+                        temp.Add(Convert.ToInt32(firstLine[i]), line[i].ToString());
                     }
                     Country country = new Country(line[0], temp);
                     countries.Add(country);
@@ -49,14 +48,15 @@ namespace WheatEU
 
         private void ShowDataGrid()
         {
-            BuzaDataGrid.ColumnCount = countries.Count;
-            BuzaDataGrid.RowCount = countries[0].WheatAmount.Count;
+            BuzaDataGrid.ColumnCount = countries[0].WheatAmount.Count;
+            BuzaDataGrid.RowCount = countries.Count;
             for (int i = 0; i < BuzaDataGrid.Rows.Count; i++)
             {
                 BuzaDataGrid.Rows[i].HeaderCell.Value = countries[i].Name;
                 for (int j = 0; j < BuzaDataGrid.Columns.Count; j++)
                 {
-                    BuzaDataGrid.Columns[j].HeaderCell.Value = countries[i].WheatAmount.Keys;
+                    string amt = countries[i].WheatAmount[2009 + j];
+                    BuzaDataGrid.Rows[i].Cells[j].Value = amt==":"?"-":amt;
                 }
             }
         }
