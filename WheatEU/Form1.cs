@@ -59,6 +59,35 @@ namespace WheatEU
                     BuzaDataGrid.Rows[i].Cells[j].Value = amt==":"?"-":amt;
                 }
             }
+            IncompleteDataItem.Enabled = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IncompleteDataItem_CheckedChanged(object sender, EventArgs e)
+        {
+            ToolStripMenuItem c = sender as ToolStripMenuItem;
+            foreach (DataGridViewRow row in BuzaDataGrid.Rows)
+            {
+                if (c.Checked == false)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        if (cell.Value.ToString() == "-")
+                        {
+                            row.Visible = false;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    row.Visible = true;
+                }
+            }
         }
     }
 }
