@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WheatEU
 {
-    internal class Country
+    public class Country
     {
         private string name;
         private Dictionary<int, string> wheatAmount;

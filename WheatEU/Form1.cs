@@ -159,5 +159,34 @@ namespace WheatEU
                     }
             }
         }
+
+        private void PieChartMenuItem_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, double> data = new Dictionary<string, double>();
+            foreach (DataGridViewRow row in BuzaDataGrid.SelectedRows)
+            {
+                List<double> temp = new List<double>();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    string value = cell.Value.ToString() == "-" ? "0" : cell.Value.ToString();
+                    temp.Add(Convert.ToDouble(value));
+                }
+                data.Add(row.HeaderCell.Value.ToString(), temp.Average());
+            }
+            data.Reverse();
+            PieForm pieForm = new PieForm(data);
+            pieForm.Show();
+        }
+
+        private void BarChartMenuItem_Click(object sender, EventArgs e)
+        {
+            BarForm barForm = new BarForm(countries);
+            barForm.ShowDialog();
+        }
+
+        private void LineChartMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

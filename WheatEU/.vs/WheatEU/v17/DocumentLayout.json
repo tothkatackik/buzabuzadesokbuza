@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|h:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\wheateu\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F48F5A-6797-45EA-9216-43D92D5CFC99}|WheatEU.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAmwK0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:31:16.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -50,20 +79,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAUwGMAAACEAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:17:41.465Z",
+              "WhenOpened": "2026-03-13T08:03:39.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -75,33 +104,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAD4vx8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T08:03:39.83Z",
+              "WhenOpened": "2026-03-18T10:18:14.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:13:10.225Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form4.cs",
+              "RelativeToolTip": "Form4.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:32:03.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Form4.cs [Design]",
+              "RelativeToolTip": "Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T10:14:01.242Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Country.cs",
               "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Country.cs",
               "RelativeDocumentMoniker": "Country.cs",
               "ToolTip": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Country.cs",
               "RelativeToolTip": "Country.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T11:22:12.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\2025-26\\progcucc\\buza\\buzabuzadesokbuza\\WheatEU\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

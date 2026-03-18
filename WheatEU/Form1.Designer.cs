@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.DataMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.IncompleteDataItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.BuzaDataGrid = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CategoryComboBox = new System.Windows.Forms.ComboBox();
             this.DiagramMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PieChartMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BarChartMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LineChartMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BuzaDataGrid = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CategoryComboBox = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BuzaDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,37 @@
             this.IncompleteDataItem.Text = "Hiányos adatok";
             this.IncompleteDataItem.CheckedChanged += new System.EventHandler(this.IncompleteDataItem_CheckedChanged);
             // 
+            // DiagramMenuItem
+            // 
+            this.DiagramMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PieChartMenuItem,
+            this.BarChartMenuItem,
+            this.LineChartMenuItem});
+            this.DiagramMenuItem.Name = "DiagramMenuItem";
+            this.DiagramMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.DiagramMenuItem.Text = "Diagramok";
+            // 
+            // PieChartMenuItem
+            // 
+            this.PieChartMenuItem.Name = "PieChartMenuItem";
+            this.PieChartMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PieChartMenuItem.Text = "Kör (országok)";
+            this.PieChartMenuItem.Click += new System.EventHandler(this.PieChartMenuItem_Click);
+            // 
+            // BarChartMenuItem
+            // 
+            this.BarChartMenuItem.Name = "BarChartMenuItem";
+            this.BarChartMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.BarChartMenuItem.Text = "Sáv (kategóriák)";
+            this.BarChartMenuItem.Click += new System.EventHandler(this.BarChartMenuItem_Click);
+            // 
+            // LineChartMenuItem
+            // 
+            this.LineChartMenuItem.Name = "LineChartMenuItem";
+            this.LineChartMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LineChartMenuItem.Text = "Vonal (HU, RO, PL)";
+            this.LineChartMenuItem.Click += new System.EventHandler(this.LineChartMenuItem_Click);
+            // 
             // BuzaDataGrid
             // 
             this.BuzaDataGrid.AllowUserToAddRows = false;
@@ -93,14 +124,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BuzaDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.BuzaDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BuzaDataGrid.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BuzaDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.BuzaDataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.BuzaDataGrid.Location = new System.Drawing.Point(0, 27);
             this.BuzaDataGrid.Name = "BuzaDataGrid";
@@ -137,34 +168,6 @@
             this.CategoryComboBox.Size = new System.Drawing.Size(179, 21);
             this.CategoryComboBox.TabIndex = 3;
             this.CategoryComboBox.SelectedIndexChanged += new System.EventHandler(this.CategoryComboBox_SelectedIndexChanged);
-            // 
-            // DiagramMenuItem
-            // 
-            this.DiagramMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PieChartMenuItem,
-            this.BarChartMenuItem,
-            this.LineChartMenuItem});
-            this.DiagramMenuItem.Name = "DiagramMenuItem";
-            this.DiagramMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.DiagramMenuItem.Text = "Diagramok";
-            // 
-            // PieChartMenuItem
-            // 
-            this.PieChartMenuItem.Name = "PieChartMenuItem";
-            this.PieChartMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.PieChartMenuItem.Text = "Kör (országok)";
-            // 
-            // BarChartMenuItem
-            // 
-            this.BarChartMenuItem.Name = "BarChartMenuItem";
-            this.BarChartMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.BarChartMenuItem.Text = "Sáv (kategóriák)";
-            // 
-            // LineChartMenuItem
-            // 
-            this.LineChartMenuItem.Name = "LineChartMenuItem";
-            this.LineChartMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.LineChartMenuItem.Text = "Vonal (HU, RO, PL)";
             // 
             // BuzaForm
             // 
