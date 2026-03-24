@@ -23,6 +23,9 @@ namespace WheatEU
         {
             Series series = DataChart.Series[0];
             double sum = data.Values.Sum();
+            series.BorderColor = Color.Black; 
+            series.BorderWidth = 1;
+            series.LabelBorderColor = Color.Black;
             List<KeyValuePair<string, double>> small = new List<KeyValuePair<string, double>>();
             foreach (KeyValuePair<string, double> kvp in data)
             {
@@ -36,9 +39,13 @@ namespace WheatEU
                 DataPoint p = new DataPoint();
                 p.SetValueY(value);
                 p.LegendText = category;
+                p.Label = category + ';' + (Math.Round(value / 100, 0) * 100).ToString();
                 series.Points.Add(p);
             }
-            series.Points.Add(Others(small));
+            if (small.Count > 0)
+            {
+                series.Points.Add(Others(small));
+            }
         }
         private DataPoint Others(List<KeyValuePair<string, double>> small)
         {
@@ -50,6 +57,7 @@ namespace WheatEU
             DataPoint p = new DataPoint();
             p.SetValueY(sum);
             p.LegendText = "Egyéb";
+            p.Label = "Egyéb" + ';' + (Math.Round(sum / 100, 0) * 100).ToString();
             return p;
         }
     }
