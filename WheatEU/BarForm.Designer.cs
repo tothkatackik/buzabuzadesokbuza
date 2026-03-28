@@ -1,6 +1,6 @@
 ﻿namespace WheatEU
 {
-    partial class LineForm
+    partial class BarForm
     {
         /// <summary>
         /// Required designer variable.
@@ -44,25 +44,28 @@
             this.DataChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.DataChart.Legends.Add(legend1);
-            this.DataChart.Location = new System.Drawing.Point(0, -1);
+            this.DataChart.Location = new System.Drawing.Point(-4, 0);
+            this.DataChart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataChart.Name = "DataChart";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.DataChart.Series.Add(series1);
-            this.DataChart.Size = new System.Drawing.Size(801, 451);
+            this.DataChart.Size = new System.Drawing.Size(1071, 556);
             this.DataChart.TabIndex = 0;
             this.DataChart.Text = "chart1";
             // 
-            // LineForm
+            // BarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.DataChart);
-            this.Name = "LineForm";
-            this.Text = "Form4";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "BarForm";
+            this.Text = "Diagram";
+            this.Load += new System.EventHandler(this.BarForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataChart)).EndInit();
             this.ResumeLayout(false);
 

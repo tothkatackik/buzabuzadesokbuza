@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -125,6 +126,8 @@ namespace WheatEU
                     max = n;
                 }
             }
+
+            
             switch (selected)
             {
                 case "Minden kategória...":

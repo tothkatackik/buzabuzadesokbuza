@@ -12,3 +12,16 @@ H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.exe.config
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.PieForm.resources
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.BarForm.resources
 H:\2025-26\progcucc\buza\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.LineForm.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\bin\Debug\WheatEU.exe.config
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\bin\Debug\WheatEU.exe
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\bin\Debug\WheatEU.pdb
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.csproj.AssemblyReference.cache
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.BuzaForm.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.PieForm.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.BarForm.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.LineForm.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.Properties.Resources.resources
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.csproj.GenerateResource.cache
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.csproj.CoreCompileInputs.cache
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.exe
+C:\Users\tkkmi\Documents\Suli\uristenem c#\buzasagfelegeszseg\buzabuzadesokbuza\WheatEU\obj\Debug\WheatEU.pdb
