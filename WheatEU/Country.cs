@@ -19,5 +19,10 @@ namespace WheatEU
 
         public string Name { get => name; }
         public Dictionary<int, string> WheatAmount { get => new Dictionary<int, string>(wheatAmount); }
+
+        public string ToString(int n)
+        {
+            return wheatAmount[n];
+        }
     }
 }

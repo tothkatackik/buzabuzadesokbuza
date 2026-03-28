@@ -14,11 +14,11 @@ namespace WheatEU
 {
     public partial class BarForm : Form
     {
-        private List<Country> countries;
-        public BarForm(List<Country> countries)
+        private Dictionary<string, List<Country>> categories;
+        public BarForm(Dictionary<string, List<Country>> categories)
         {
             InitializeComponent();
-            this.countries = new List<Country>(countries);
+            this.categories = new Dictionary<string, List<Country>>(categories);
         }
 
         private void BarForm_Load(object sender, EventArgs e)
@@ -27,9 +27,19 @@ namespace WheatEU
             series.Color = Color.Black;
             series.LegendText = "Kategóriák gyakorisága";
 
-            DataPointCollection points = series.Points;
-            points.Clear();
+            ChartArea area = DataChart.ChartAreas[0];
+            area.AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
+            area.AxisY.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
+            area.AxisY.IntervalAutoMode = IntervalAutoMode.VariableCount;
 
+            DataPointCollection points = series.Points;
+            foreach (KeyValuePair<string, List<Country>> cat in categories)
+            {
+                DataPoint p = new DataPoint();
+                p.AxisLabel = cat.Key;
+                p.SetValueY(cat.Value.Count);
+                points.Add(p);
+            }
         }
     }
 }

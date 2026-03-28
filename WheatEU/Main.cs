@@ -17,6 +17,7 @@ namespace WheatEU
     public partial class BuzaForm : Form
     {
         private List<Country> countries;
+        public Dictionary<string, List<Country>> categories;
         public BuzaForm()
         {
             InitializeComponent();
@@ -45,7 +46,59 @@ namespace WheatEU
                     countries.Add(country);
                 }
             }
+            LoadCategories();
             ShowDataGrid();
+        }
+
+        private void LoadCategories()
+        {
+            categories = new Dictionary<string, List<Country>>();
+            categories.Add("Törpe",      new List<Country>());
+            categories.Add("Kicsi",      new List<Country>());
+            categories.Add("Közepes",    new List<Country>());
+            categories.Add("Nagy",       new List<Country>());
+            categories.Add("Óriási",     new List<Country>());
+            double max = Convert.ToDouble(countries.Select(
+                    x => x.WheatAmount[2016] == ":" ? 0 : Convert.ToDouble(x.WheatAmount[2016]))
+                    .Max());
+            Console.WriteLine(max);
+            foreach (Country c in countries)
+            {
+                string temp = c.WheatAmount[2016];
+                double v = temp == ":" ? 0 : Convert.ToDouble(temp);
+                if (v < max * 0.1)
+                {
+                    categories["Törpe"].Add(c);
+                }
+                else if (v < max * 0.2)
+                {
+                    categories["Kicsi"].Add(c);
+                }
+                else if (v < max * 0.4)
+                {
+                    categories["Közepes"].Add(c);
+                }
+                else if (v < max * 0.6)
+                {
+                    categories["Nagy"].Add(c);
+                }
+                else if (v <= max)
+                {
+                    categories["Óriási"].Add(c);
+                }
+            }
+            debugmertmarteleakibaszottokom();
+        }
+
+        private void debugmertmarteleakibaszottokom()
+        {
+            foreach (KeyValuePair<string, List<Country>> kvp in categories)
+            {
+                foreach (Country c in kvp.Value)
+                {
+                    Console.WriteLine(kvp.Key + " " + c.ToString(2016));
+                }
+            }
         }
 
         private void ShowDataGrid()
@@ -94,18 +147,19 @@ namespace WheatEU
             }
         }
 
-        private void FilteredShow(double max, double pu, double pl)
+        private void FilteredShow(string category)
         {
             BuzaDataGrid.Rows.Clear();
-            List<Country> q = countries.Where(x => Convert.ToDouble(x.WheatAmount[2016] == ":" ? "0" : x.WheatAmount[2016]) >= pl * max && Convert.ToDouble(x.WheatAmount[2016] == ":" ? "0" : x.WheatAmount[2016]) < pu * max).ToList();
-            if (pu == 1) q.Add(countries.Find(x => Convert.ToDouble(x.WheatAmount[2016] == ":" ? "0" : x.WheatAmount[2016]) == max));
-            BuzaDataGrid.RowCount = q.Count();
+            List<Country> c;
+            if (category == "Minden kategória...") c = new List<Country>(countries);
+            else c = new List<Country>(categories[category]);
+            BuzaDataGrid.RowCount = c.Count;
             for (int i = 0; i < BuzaDataGrid.Rows.Count; i++)
             {
-                BuzaDataGrid.Rows[i].HeaderCell.Value = q[i].Name;
+                BuzaDataGrid.Rows[i].HeaderCell.Value = c[i].Name;
                 for (int j = 0; j < BuzaDataGrid.Columns.Count; j++)
                 {
-                    string amt = q[i].WheatAmount[2009 + j];
+                    string amt = c[i].WheatAmount[2009 + j];
                     BuzaDataGrid.Rows[i].Cells[j].Value = amt == ":" ? "-" : amt;
                 }
             }
@@ -114,53 +168,7 @@ namespace WheatEU
         private void CategoryComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selected = (sender as ComboBox).SelectedItem.ToString();
-            int year = 2016;
-            double max = -67;
-            foreach (Country country in countries)
-            {
-                string temp = country.WheatAmount[year];
-                if (temp == ":") continue;
-                double n = Convert.ToDouble(temp);
-                if (n > max)
-                {
-                    max = n;
-                }
-            }
-
-            
-            switch (selected)
-            {
-                case "Minden kategória...":
-                    {
-                        ShowDataGrid();
-                        break;
-                    }
-                case "Törpe":
-                    {
-                        FilteredShow(max, 0.1, 0);
-                        break;
-                    }
-                case "Kicsi":
-                    {
-                        FilteredShow(max, 0.2, 0.1);
-                        break;
-                    }
-                case "Közepes":
-                    {
-                        FilteredShow(max, 0.4, 0.2);
-                        break;
-                    }
-                case "Nagy":
-                    {
-                        FilteredShow(max, 0.6, 0.4);
-                        break;
-                    }
-                case "Óriási":
-                    {
-                        FilteredShow(max, 1, 0.6);
-                        break;
-                    }
-            }
+            FilteredShow(selected);
         }
 
         private void PieChartMenuItem_Click(object sender, EventArgs e)
@@ -183,13 +191,16 @@ namespace WheatEU
 
         private void BarChartMenuItem_Click(object sender, EventArgs e)
         {
-            BarForm barForm = new BarForm(countries);
+            BarForm barForm = new BarForm(categories);
             barForm.ShowDialog();
         }
 
         private void LineChartMenuItem_Click(object sender, EventArgs e)
         {
-
+            LineForm lineForm = new LineForm(countries.First(x => x.Name == "Magyarország"),
+                countries.First(x => x.Name == "Románia"),
+                countries.First(x => x.Name == "Lengyelország"));
+            lineForm.ShowDialog();
         }
     }
 }
