@@ -87,10 +87,10 @@ namespace WheatEU
                     categories["Óriási"].Add(c);
                 }
             }
-            debugmertmarteleakibaszottokom();
+            debug();
         }
 
-        private void debugmertmarteleakibaszottokom()
+        private void debug()
         {
             foreach (KeyValuePair<string, List<Country>> kvp in categories)
             {
